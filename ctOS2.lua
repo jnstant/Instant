@@ -1,8 +1,10 @@
 --[[
-
-█▀▀ ▀▀█▀▀ ░█▀▀▀█ ░█▀▀▀█     ~~(8:>
-█── ──█── ░█──░█ ─▀▀▀▄▄     ~~(8:>
-▀▀▀ ──▀── ░█▄▄▄█ ░█▄▄▄█     ~~(8:>
+╭━╮╱╭╮╱╱╱╱╱╱╱╱╭╮╱╱╱╱╱╱╱╱╱╱╭━━━╮╱╭╮            |
+┃┃╰╮┃┃╱╱╱╱╱╱╱╱┃┃╱╱╱╱╱╱╱╱╱╱┃╭━╮┃╱┃┃            |
+┃╭╮╰╯┣━━┳╮╭┳━━┫┃╭━━┳━━┳━━╮┃┃╱┃┣━╯┣╮╭┳┳━╮     | Welcome to the Nameless Admin source, feel free to take a look around.
+┃┃╰╮┃┃╭╮┃╰╯┃┃━┫┃┃┃━┫━━┫━━┫┃╰━╯┃╭╮┃╰╯┣┫╭╮╮    | Enjoy.
+┃┃╱┃┃┃╭╮┃┃┃┃┃━┫╰┫┃━╋━━┣━━┃┃╭━╮┃╰╯┃┃┃┃┃┃┃┃    |
+╰╯╱╰━┻╯╰┻┻┻┻━━┻━┻━━┻━━┻━━╯╰╯╱╰┻━━┻┻┻┻┻╯╰╯    |
 --]]
 
  -- Waits until game is loaded
@@ -623,11 +625,20 @@
 	 loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/executor"))()
  end)
  
- cmd.add({"scripthub"}, {"scripthub", "Thanks to scriptblox api"}, function()
+cmd.add({"scripthub"}, {"scripthub", "Thanks to scriptblox api"}, function()
 	 loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/ScriptHub"))()
  end)
  
- cmd.add({"stand"}, {"stand <player>", "Makes a player your stand"}, function(...)
+cmd.add({"glacierhub"}, {"glacierhub", "Executes the Glacier Hub script"}, function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+	Notify({
+		Description = "Glacier Hub script executed";
+		Title = "Nameless Admin";
+		Duration = 5;
+	});
+end)
+
+cmd.add({"stand"}, {"stand <player>", "Makes a player your stand"}, function(...)
 		   Username = (...)
   
  local target = getPlr(Username)
