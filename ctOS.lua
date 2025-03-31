@@ -6,7 +6,6 @@
 --]]
 
 
-
  -- Waits until game is loaded
  local game = game
  local GetService = game.GetService
@@ -16,8 +15,6 @@
 	 wait(1.5)
  end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
-    DiscordLib:Notification("Notification", "Glacier Hub script executed", "Okay!")
 
  -- Notification library
  local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/notificationtest"))();
@@ -3188,3 +3185,6 @@ print(Time)
  end)
  
  cmd.add({"equiptools", "equipall"}, {"equip…"
+
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+    DiscordLib:Notification("Notification", "Glacier Hub script executed", "Okay!")
