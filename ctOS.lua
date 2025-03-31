@@ -5,8 +5,7 @@
 ▀▀▀ ──▀── ░█▄▄▄█ ░█▄▄▄█     ~~(8:>
 --]]
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
-    DiscordLib:Notification("Notification", "Glacier Hub script executed", "Okay!")
+
 
  -- Waits until game is loaded
  local game = game
@@ -16,7 +15,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/
 	 Loaded.Wait(Loaded);
 	 wait(1.5)
  end
- 
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+    DiscordLib:Notification("Notification", "Glacier Hub script executed", "Okay!")
+
  -- Notification library
  local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/notificationtest"))();
  local Notify = Notification.Notify;
