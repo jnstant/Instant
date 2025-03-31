@@ -3184,5 +3184,4 @@ print(Time)
 	 end
  end)
  
- cmd.add({"equiptools", "equipall"}, {"equip…"
 
