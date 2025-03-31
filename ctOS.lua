@@ -5,6 +5,15 @@
 ▀▀▀ ──▀── ░█▄▄▄█ ░█▄▄▄█     ~~(8:>
 --]]
 
+
+----<< LOADER >> -----
+if getgenv().KadeHubLoaded ~= true then
+    getgenv().KadeHubLoaded = true
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/Work/main/latest.lua"))()
+else
+    game.StarterGui:SetCore("SendNotification",  { Title = "KadeHub"; Text = "KadeHub is already executed!"; Icon = "rbxassetid://17893547380"; Duration = 15; })
+end
+
  -- Waits until game is loaded
  local game = game
  local GetService = game.GetService
@@ -13,7 +22,7 @@
 	 Loaded.Wait(Loaded);
 	 wait(1.5)
  end
- 
+
  -- Notification library
  local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/notificationtest"))();
  local Notify = Notification.Notify;
@@ -15150,16 +15159,7 @@ end
 		 cmdInput:CaptureFocus()
  end)
 
-	--[[
-    WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-----<< LOADER >> -----
-if getgenv().KadeHubLoaded ~= true then
-    getgenv().KadeHubLoaded = true
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/Work/main/latest.lua"))()
-else
-    game.StarterGui:SetCore("SendNotification",  { Title = "KadeHub"; Text = "KadeHub is already executed!"; Icon = "rbxassetid://17893547380"; Duration = 15; })
-end
+
 	
  --[[
 	End of the source code.
