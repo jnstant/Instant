@@ -5,6 +5,8 @@
 ▀▀▀ ──▀── ░█▄▄▄█ ░█▄▄▄█     ~~(8:>
 --]]
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+    DiscordLib:Notification("Notification", "Glacier Hub script executed", "Okay!")
 
  -- Waits until game is loaded
  local game = game
