@@ -15150,6 +15150,17 @@ end
 		 cmdInput:CaptureFocus()
  end)
 
+	--[[
+    WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+----<< LOADER >> -----
+if getgenv().KadeHubLoaded ~= true then
+    getgenv().KadeHubLoaded = true
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/Work/main/latest.lua"))()
+else
+    game.StarterGui:SetCore("SendNotification",  { Title = "KadeHub"; Text = "KadeHub is already executed!"; Icon = "rbxassetid://17893547380"; Duration = 15; })
+end
+	
  --[[
 	End of the source code.
 	Join the discord for updates or give command ideas, that could be added.
