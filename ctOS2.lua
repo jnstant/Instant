@@ -2036,8 +2036,8 @@ print(Time)
  cmd.add({"commandcount", "cc"}, {"commandcount (cc)", "Counds how many commands NA has"}, function()
  
  Notify({
-	 Description = "Nameless Admin currently has ".. commandcount .. " commands";
-	 Title = "Nameless Admin";
+	 Description = "ctOS currently has ".. commandcount .. " commands";
+	 Title = "ctOS cmds";
 	 Duration = 5;
 	 
 	 });
@@ -2047,7 +2047,7 @@ print(Time)
  cmd.add({"walkfling", "wfling"}, {"walkfling (wfling) [THANKS TO X]", "probably the best fling lol"}, function()
 	 Notify({
 		 Description = "Walkfling enabled";
-		 Title = "Nameless Admin";
+		 Title = "ctOS";
 		 Duration = 5;
 		 
 		 });
@@ -2093,7 +2093,7 @@ print(Time)
  cmd.add({"unwalkfling", "unwfling"}, {"unwalkfling (unwfling)", "stop the walkfling command"}, function()
 	 Notify({
 		 Description = "Walkfling disabled";
-		 Title = "Nameless Admin";
+		 Title = "ctOS";
 		 Duration = 5;
 		 
 		 });
@@ -2226,7 +2226,7 @@ print(Time)
  
  Notify({
  Description = "Rejoining...";
- Title = "Nameless Admin";
+ Title = "ctOS";
  Duration = 5;
  
  });
@@ -2459,7 +2459,7 @@ print(Time)
  
  Notify({
  Description = accountage;
- Title = "Nameless Admin";
+ Title = "ctOS";
  Duration = 7;
  
  });
@@ -2929,7 +2929,7 @@ print(Time)
 		 
 		 Notify({
 		 Description = "Vehicle fly enabled";
-		 Title = "Nameless Admin";
+		 Title = "ctOS";
 		 Duration = 5;
 	 
  });
@@ -2948,7 +2948,7 @@ print(Time)
 		 
 		 Notify({
 		 Description = "Vehicle fly disabled";
-		 Title = "Nameless Admin";
+		 Title = "ctOS";
 		 Duration = 5;
 	 
  });
